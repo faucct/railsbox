@@ -1,7 +1,3 @@
-default["railsbox"]["db_root_password"] = nil
-
-default["railsbox"]["databases"]["postgresql"] = []
-
 
 default["railsbox"]["ruby"]["versions"] = %w(2.0.0-p247)
 default["railsbox"]["ruby"]["global_version"] = "2.0.0-p247"
@@ -20,6 +16,10 @@ default["railsbox"]["default_config"]["unicorn"]["before_fork"] = 'sleep 1'
 default["railsbox"]["default_config"]["unicorn_runit"]["template_name"] = "unicorn"
 default["railsbox"]["default_config"]["unicorn_runit"]["template_cookbook"] = "railsbox"
 default["railsbox"]["default_config"]["unicorn_runit"]["rack_env"] = "production"
+
+default["railsbox"]["db_root_password"] = nil
+
+default["railsbox"]["databases"]["postgresql"] = []
 
 
 default[:github_deploys][:deploy_user] = "deploy"
