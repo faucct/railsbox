@@ -38,11 +38,23 @@ It performs the following tasks when setup the server:
 
 ## Install
 
+### git
+
 To install with **Berkshelf**, add this into `Berksfile`:
 
 ```
 cookbook 'railsbox', git: 'git://github.com/ouyangzhiping/railsbox.git'
 ```
+
+### opscode
+
+or [Chef Cookbook: railsbox - Opscode Community](http://community.opscode.com/cookbooks/railsbox),add this into `Berksfile`:
+
+```
+site :opscode
+cookbook 'railsbox'
+````
+
 
 and run:
 
