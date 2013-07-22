@@ -2,7 +2,7 @@ name             'railsbox'
 maintainer       'zhiping'
 maintainer_email 'im@yangzhiping.com'
 license          'Apache License 2.0'
-description      'Installs/Configures railsbox'
+description      'auto deploy railsapp with rbenv+nginx+unicorn+postgresql'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 

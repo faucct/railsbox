@@ -60,8 +60,8 @@ example:
     "railsbox"
   ],
   "appbox": {
-    "deploy_keys": ["ssh-rsa, such as：1. run cat ~/.ssh/id_rsa.pub on your mac 2. copy it"],
-    "admin_keys": ["ssh-rsa, such as：1. run cat ~/.ssh/id_rsa.pub on your mac 2. copy it"]
+    "deploy_keys": ["ssh-rsa, 1. run cat ~/.ssh/id_rsa.pub on your mac 2. copy it"],
+    "admin_keys": ["ssh-rsa, 1. run cat ~/.ssh/id_rsa.pub on your mac 2. copy it"]
   },
   "railsbox": {
     "db_root_password": "welcome!",
@@ -78,7 +78,7 @@ example:
     },
     "apps": {
       "unicorn": [
-        { "appname": "appname",
+        { "appname": "railsbox-example-app1",
           "hostname": "33.33.33.10"
         }
       ]
@@ -135,7 +135,7 @@ You may change the **default config** settings:
     * `node["railsbox"]["github_deploys"]["password"]` - set your github password
 
 
-# Recipes
+## Recipes
 
 * recipe   "railsbox", "Includes all recipes."
 * recipe   "railsbox::ruby", "Install and setup Ruby environment  using `rbenv`"
@@ -145,6 +145,10 @@ You may change the **default config** settings:
 * recipe   "railsbox::nodejs", "Install nodejs from package to complie assest."
 * recipe   "railsbox:github-deploys", "Using the Github API to authorise the new public key (if any)"
 
-# Author
+## Change History
 
-Author:: zhiping (<im@yangzhiping.com>)
+See [CHANGELOG](CHANGELOG.md).
+
+## Author
+
+Author:: zhiping (<http://yangzhiping.com>)
