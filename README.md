@@ -103,11 +103,7 @@ example:
       "email": "set your github user email",
       "password": "set your github password"
     }
-  },
-  "nginx":
-{
-  "version": "1.5.2"
-}
+  }
 }
 ```
 
