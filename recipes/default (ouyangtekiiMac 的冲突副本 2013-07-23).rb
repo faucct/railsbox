@@ -1,19 +1,18 @@
 #
 # Cookbook Name:: railsbox
 # Recipe:: default
-# "apt\sudo\user\curl\htop\git\tmux"+rbenv+nginx+nodejs+psql+github-deploys
 #
-# Copyright (C) 2013 zhiping
+# Copyright (C) 2013 YOUR_NAME
 # 
 # All rights reserved - Do Not Redistribute
-# 
+#
 
-node.set['build_essential']['compiletime'] = true
+
 include_recipe "appbox"
 include_recipe "railsbox::ruby"
 include_recipe "railsbox::nginx"
 include_recipe "runit"
-include_recipe "railsbox::nodejs"
+include_recipe "nodejs"
 
 if node["railsbox"]["apps"]["unicorn"]
   include_recipe "railsbox::unicorn"
@@ -23,6 +22,7 @@ if node["railsbox"]["databases"]["postgresql"]
   include_recipe "railsbox::postgresql"
 end
 
-if node["github_deploys"]
-	include_recipe "railsbox::github-deploys"
-end
+
+# if node["railsbox"]["apps"]["passenger"]
+#   include_recipe "railsbox::passenger"
+# end
