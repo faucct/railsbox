@@ -8,7 +8,9 @@
 # 
 
 
-path_to_key = "/home/#{node[:github_deploys][:deploy_user]}/.ssh/id_rsa"
+path_to_key = "/home/#{node[:github_deploys][:deploy_user]}/.ssh/id_dsa"
+
+#path_to_key = "/home/#{node[:github_deploys][:deploy_user]}/.ssh/id_rsa"
 
 
 ruby_block "upload_key_to_github" do
