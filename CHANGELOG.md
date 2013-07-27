@@ -23,6 +23,9 @@ todo
 
 fix
 
-* change nginx default version from 1.2.6 to 1.4.2  
-* change postgrel default version from 9.1.9 to 9.2.4
+* change nginx default version from 1.2.6 to 1.4.2
+* change postgresql default version from 9.1.9 to 9.2.4
+* solution postgresql "Error executing action `run` on resource 'execute[make pg gem lib]'"
+* auto change postgresql conf from peer to md5, "FATAL: Peer authentication failed for user"
+* auto github
 
