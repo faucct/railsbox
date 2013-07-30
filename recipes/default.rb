@@ -8,12 +8,17 @@
 # All rights reserved - Do Not Redistribute
 # 
 
-node.set['build_essential']['compiletime'] = true
+
+if node["appbox"]
 include_recipe "appbox"
+end
+if node["railsbox"]["ruby"]
+node.set['build_essential']['compiletime'] = true
 include_recipe "railsbox::ruby"
 include_recipe "railsbox::nginx"
 include_recipe "runit"
 include_recipe "railsbox::nodejs"
+end
 
 if node["railsbox"]["apps"]["unicorn"]
   include_recipe "railsbox::unicorn"
