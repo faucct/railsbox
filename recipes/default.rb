@@ -15,7 +15,6 @@ include_recipe "railsbox::ruby"
 include_recipe "railsbox::nginx"
 include_recipe "runit"
 include_recipe "railsbox::nodejs"
-include_recipe "sqlite"
 
 if node["railsbox"]["apps"]["unicorn"]
   include_recipe "railsbox::unicorn"
