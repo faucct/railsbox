@@ -25,5 +25,6 @@ depends 'runit', '>= 1.1.2'
 depends "postgresql"
 depends "database"
 depends "nodejs"
+depends "sqlite"
 
 
