@@ -7,4 +7,4 @@
 # Copyright (C) 2013 zhiping Limited
 # 
 
-include_recipe "nodejs::install_from_package"
+include_recipe "nodejs::nodejs_from_package"
